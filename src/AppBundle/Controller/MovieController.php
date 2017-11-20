@@ -46,6 +46,7 @@ class MovieController extends BaseController
 
         return $this->render('movie/list.html.twig', array(
             'movies' => $movies
-        ));
+        )
+        );
     }
 }

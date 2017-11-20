@@ -34,7 +34,7 @@ class MovieController extends BaseController
             'form' => $form->createView()
         ));
     }
-    
+
     /**
      * @Route("/movies", name="movies_list")
      */
@@ -46,7 +46,6 @@ class MovieController extends BaseController
 
         return $this->render('movie/list.html.twig', array(
             'movies' => $movies
-        )
-        );
+        ));
     }
 }

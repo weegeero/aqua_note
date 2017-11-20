@@ -8,10 +8,9 @@
 
 namespace AppBundle\Service;
 
-
 use Psr\Log\LoggerInterface;
 
-class QuoteGenerator
+class QuoteGeneratorService
 {
 
     /**

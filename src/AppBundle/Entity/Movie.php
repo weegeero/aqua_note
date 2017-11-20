@@ -102,7 +102,7 @@ class Movie
     /**
      * @return mixed
      */
-    public function getisMainCharacter()
+    public function getIsMainCharacter()
     {
         return $this->isMainCharacter;
     }

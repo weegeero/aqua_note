@@ -4,7 +4,10 @@
         <thead>
         <tr>
             <th>Movie name</th>
-            <th>Character</th>
+            <th>Character name</th>
+            <th>Main character</th>
+            <th>Rating</th>
+            <th>Released</th>
         </tr>
         </thead>
         <tbody>
@@ -12,6 +15,14 @@
             <tr>
                 <td>{{ movie.title }}</td>
                 <td>{{ movie.samsCharacterName }}</td>
+                <td>
+                    {% if movie.isMainCharacter == true %}Yes
+                    {% endif %}
+                    {% if movie.isMainCharacter == false %}No
+                    {% endif %}
+                </td>
+                <td>{{ movie.rating }}</td>
+                <td>{{ movie.releasedAt|date("d.m.Y") }}</td>
             </tr>
         {% endfor %}
         </tbody>

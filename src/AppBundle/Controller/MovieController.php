@@ -34,7 +34,7 @@ class MovieController extends BaseController
             'form' => $form->createView()
         ));
     }
-
+    
     /**
      * @Route("/movies", name="movies_list")
      */
